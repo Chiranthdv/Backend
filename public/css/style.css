@@ -1,0 +1,124 @@
+/* 
+
+
+/* Original Styles (Unchanged) */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    flex: 1;
+}
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass {
+    color: #fe424d;
+    font-size: 1.5rem;
+}
+.nav-link {
+    color: #222222 !important;
+}
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+.f-info-links {
+    width: 100%;
+    margin-top: 1rem;
+}
+.f-info-socials {
+    width: 100%;
+}
+.f-info-socials i {
+    font-size: 2rem;
+    margin: 1rem;
+}
+.f-info {
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body {
+    padding: 0 !important;
+}
+.card-text p {
+    font-weight: 400 !important;
+}
+.row a {
+    text-decoration: none;
+}
+.card-img-overlay {
+    opacity: 0;
+}
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+.show-img {
+    height: 40vh;
+}
+.butn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#map { 
+    height: 400px;
+    width: 100vh;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        height: 4rem; /* Adjust navbar height for smaller screens */
+    }
+    .f-info {
+        height: auto; /* Allow footer to adjust height dynamically */
+        padding: 1rem; /* Add padding for better spacing */
+    }
+    .f-info-links, .f-info-socials {
+        text-align: center; /* Center align footer links and socials */
+    }
+    .listing-card {
+        margin-bottom: 1rem; /* Reduce margin for smaller screens */
+    }
+    .show-img {
+        height: 30vh; /* Reduce image height for smaller screens */
+    }
+    #map {
+        height: 300px; /* Adjust map height */
+        width: 100%; /* Make map width responsive */
+    }
+    .butn {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem; /* Add spacing between buttons */
+    }
+    .card-text p {
+        font-size: 0.9rem; /* Adjust font size for better readability */
+    }
+    .fa-compass {
+        font-size: 1.2rem; /* Reduce icon size */
+    }
+    .f-info-socials i {
+        font-size: 1.5rem; /* Adjust icon size */
+        margin: 0.5rem; /* Reduce margin */
+    }
+}
